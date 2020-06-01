@@ -1,0 +1,26 @@
+[MySQL]
+mysqlpass = "killim310"
+dbname = "ft2k"
+orderstb = "orders"
+
+[Watchman]
+#domain = "localhost"
+domain = "www.ft2k.com"
+# setting maximum time feeder can sleep before triggers email warnings, should be an hour at this point
+max_sleep_time_sec = "3600"
+feeding_threshold_sec = "120"
+
+[GSK]
+headless = "true"
+# can add in more info here, like table and column names to construct
+
+[Data]
+ctimelog = "ft2k/Software/Watchman/data/ctimelog.csv"
+cfeedlog = "ft2k/Software/Watchman/data/cfeedlog.csv"
+dbsqlite = "ft2k/Software/Server/db.sqlite"
+
+[Feeder]
+port="/dev/ttyUSB0"
+baudrate="115200"
+domainname="www.KilliFeeder.com"
+
